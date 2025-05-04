@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Apps Móviles para PyMEs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        /* Custom styles if needed */
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+        /* Style for the confirmation message */
+        #confirmation-message {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="./ChatGPT Image 4 may 2025, 04_58_28 p.m..png" alt="Logo de la Empresa" class="h-10 w-auto">
+                <img src="https://placehold.co/150x40/cccccc/ffffff?text=Logo" alt="Logo placeholder" style="display:none; height: 40px; width: auto;" onerror="this.style.display='block'; this.previousElementSibling.style.display='none';">
+            </a>
+            <div>
+                <a href="#servicios" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Servicios</a>
+                <a href="#beneficios" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Beneficios</a>
+                <a href="#contacto" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700 transition duration-300">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Transforma tu Negocio con Apps Móviles</h1>
+            <p class="text-lg md:text-xl mb-8 text-blue-100">Creamos aplicaciones móviles a medida para pequeñas y medianas empresas.</p>
+            <a href="#contacto" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition duration-300 text-lg">Solicita una Consulta Gratuita</a>
+        </div>
+    </header>
+
+    <section id="servicios" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Nuestros Servicios</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-mobile-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Desarrollo Nativo (iOS & Android)</h3>
+                    <p class="text-gray-600">Creamos apps optimizadas para cada plataforma, asegurando el mejor rendimiento y experiencia de usuario.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-sync-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Desarrollo Multiplataforma</h3>
+                    <p class="text-gray-600">Desarrollamos apps que funcionan en múltiples dispositivos con un solo código base, ahorrando tiempo y costos.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md text-center hover:shadow-xl transition duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-cloud-upload-alt fa-3x"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Integración y Mantenimiento</h3>
+                    <p class="text-gray-600">Integramos tus apps con sistemas existentes y ofrecemos soporte continuo para asegurar su funcionamiento óptimo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="py-16 md:py-24 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">¿Por Qué Elegirnos?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/3B82F6/FFFFFF?text=Imagen+Beneficios" alt="Ilustración de beneficios de apps móviles" class="rounded-lg shadow-lg mx-auto">
+                     <img src="https://placehold.co/600x400/cccccc/ffffff?text=Imagen+no+disponible" alt="Imagen no disponible" style="display:none;" onerror="this.style.display='block'; this.previousElementSibling.style.display='none';">
+                </div>
+                <div>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Enfoque en PyMEs</h4>
+                                <p class="text-gray-600">Entendemos las necesidades y presupuestos de las pequeñas y medianas empresas.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Soluciones a Medida</h4>
+                                <p class="text-gray-600">No usamos plantillas; cada app se diseña y desarrolla según tus requisitos específicos.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Comunicación Transparente</h4>
+                                <p class="text-gray-600">Te mantenemos informado durante todo el proceso de desarrollo.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-800">Entrega Puntual</h4>
+                                <p class="text-gray-600">Nos comprometemos a cumplir con los plazos acordados.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Hablemos de tu Proyecto</h2>
+            <div class="max-w-3xl mx-auto bg-gray-50 p-8 rounded-lg shadow-lg">
+                <form id="contact-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-lg">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="confirmation-message" class="bg-green-500 text-white px-6 py-3 rounded-md shadow-lg">
+        <p><i class="fas fa-check-circle mr-2"></i>¡Mensaje enviado con éxito!</p>
+    </div>
+
+    <footer class="bg-gray-800 text-gray-400 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 TuNombreDeEmpresa. Todos los derechos reservados.</p>
+            </div>
+    </footer>
+
+    <script>
+        // Get the form and the confirmation message element
+        const contactForm = document.getElementById('contact-form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+
+        // Add event listener for form submission
+        contactForm.addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // --- In a real application, you would send the form data to a server here ---
+            // Example: using fetch() API
+            /*
+            const formData = new FormData(contactForm);
+            fetch('/your-server-endpoint', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // Show confirmation message
+                showConfirmation(); // You might need to define this function or integrate the logic directly
+                // Reset the form
+                contactForm.reset();
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                // Optionally show an error message
+                // Using a simple alert for now, but a styled message box is better
+                const errorBox = document.createElement('div');
+                errorBox.style.position = 'fixed';
+                errorBox.style.top = '20px';
+                errorBox.style.left = '50%';
+                errorBox.style.transform = 'translateX(-50%)';
+                errorBox.style.backgroundColor = 'red';
+                errorBox.style.color = 'white';
+                errorBox.style.padding = '10px 20px';
+                errorBox.style.borderRadius = '5px';
+                errorBox.style.zIndex = '1001';
+                errorBox.textContent = 'Hubo un error al enviar el mensaje.';
+                document.body.appendChild(errorBox);
+                setTimeout(() => {
+                    document.body.removeChild(errorBox);
+                }, 5000);
+            });
+            */
+
+            // --- For this example, we just simulate success ---
+
+            // Show the confirmation message
+            confirmationMessage.style.display = 'block';
+
+            // Hide the confirmation message after a few seconds (e.g., 5 seconds)
+            setTimeout(() => {
+                confirmationMessage.style.display = 'none';
+            }, 5000); // 5000 milliseconds = 5 seconds
+
+            // Reset the form fields
+            contactForm.reset();
+        });
+    </script>
+
+</body>
+</html>
